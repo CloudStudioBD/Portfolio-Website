@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'QuicklySustain'; /* Name the font */
+    src: url('/assets/fonts/quickly-sustain.ttf') format('truetype'); /* Path to font */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.skill-card img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    max-height: 800px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}

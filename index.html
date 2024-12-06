@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmul HA Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/style/style.css">
+        <link rel="preload" href="/assets/fonts/quickly-sustain.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Header Section -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="flex justify-between items-center px-6 py-2">
+          <!-- Logo -->
+          <h1 class="font-sans font-bold text-sky-950 text-4xl"><a href="#hero">Nazmul HA</a></h1>
+      
+          <!-- Hamburger Menu (Visible on Small Screens) -->
+          <button
+            id="menu-toggle"
+            class="block md:hidden text-sky-950 focus:outline-none"
+          >
+            <!-- Hamburger Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+      
+          <!-- Navigation Menu -->
+          <nav
+            id="menu"
+            class="hidden md:flex md:space-x-6 md:items-center text-lg font-semibold text-sky-950"
+          >
+            <a href="#hero" class="block md:inline hover:text-blue-500">Home</a>
+            <a href="#about" class="block md:inline hover:text-blue-500">About</a>
+            <a href="#skills" class="block md:inline hover:text-blue-500">Skills</a>
+            <a href="#projects" class="block md:inline hover:text-blue-500">Projects</a>
+            <a href="#contact" class="block md:inline hover:text-blue-500">Contact</a>
+          </nav>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden flex-col space-y-2 px-6 py-4 bg-white md:hidden shadow-md"
+        >
+          <a href="#home" class="block hover:text-blue-500">Home</a>
+          <a href="#about" class="block hover:text-blue-500">About</a>
+          <a href="#skills" class="block hover:text-blue-500">Skills</a>
+          <a href="#projects" class="block hover:text-blue-500">Projects</a>
+          <a href="#contact" class="block hover:text-blue-500">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="container mx-auto flex items-center justify-between py-20 px-4">
+          <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <br><span>Nazmul Hasan</span></h1>
+            <p class="text-lg md:text-xl mb-6">A Passionate Web Developer</p>
+            <div class="space-x-4">
+              <a href="#projects" class="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-gray-200">View My Work</a>
+              <a href="#contact" class="bg-blue-700 px-4 py-2 rounded shadow hover:bg-blue-800">Hire Me</a>
+            </div>
+          </div>
+          <img src="hero.png" alt="Your Image" class="hidden md:block w-1/2 rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <section id="about" class="bg-slate-300 py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <img src="Code.jpg" alt="Your Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 md:mb-0">
+          <div class="ml-6 text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">I’m a web developer with a passion for creating responsive, user-friendly websites. With expertise in [your skills], I strive to deliver high-quality digital experiences.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Skill Card -->
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="web.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+              <p>HTML, CSS, Tailwind CSS, JavaScript</p>
+              <p>Experience: 2+ years</p>
+            </div>
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="graphics.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Graphics Design</h3>
+              <p>Photoshop, Illustration</p>
+              <p>Experience: 4+ years</p>
+            </div>
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="office.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Microsoft Office</h3>
+              <p>Word, Excel, PowerPoint</p>
+              <p>Experience: 2+ years</p>
+            </div>
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="C.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Software Developer</h3>
+              <p>C#, MS SQL Server, .Net Framework</p>
+              <p>Experience: 2+ years</p>
+            </div>
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="Video.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Video Editing</h3>
+              <p>Premiere Pro, After Effects, Audition</p>
+              <p>Experience: 3+ years</p>
+            </div>
+            <div class="p-6 bg-slate-400 rounded-lg shadow skill-card">
+              <img src="motion.jpg" alt="Frontend" class="w-full">
+              <h3 class="text-xl font-semibold mb-2">Motion Graphics</h3>
+              <p>After Effects, 3Ds Max</p>
+              <p>Experience: 6 Months</p>
+            </div>
+          </div>
+        </div>
+    </section>
+     
+    <!-- Project Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-10">My Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white rounded-lg shadow p-6">
+              <img src="bdimbd.jpg" alt="Project 1" class="rounded mb-4">
+              <h3 class="text-xl font-semibold">BDIMBD</h3>
+              <p class="text-gray-600">Private Madrasah Website</p>
+              <div class="mt-4">
+                <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://www.bdimbd.com/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="jana.jpg" alt="Project 1" class="rounded mb-4">
+                <h3 class="text-xl font-semibold">JanaOcean</h3>
+                <p class="text-gray-600">Import Export Company Website</p>
+                <div class="mt-4">
+                  <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.janaocean.com/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="bg-white rounded-lg shadow p-6">
+                <img src="thug.jpg" alt="Project 1" class="rounded mb-4">
+                <h3 class="text-xl font-semibold">Thug Gaming 2.0</h3>
+                <p class="text-gray-600">Gaming Streamer Website</p>
+                <div class="mt-4">
+                  <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://thuggaming2.xyz/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+
+              <!-- Project 4 -->
+              <div class="bg-white rounded-lg shadow p-6">
+                <img src="urban.jpg" alt="Project 1" class="rounded mb-4">
+                <h3 class="text-xl font-semibold">Urban X Beauty</h3>
+                <p class="text-gray-600">Ladis eCommarce Website</p>
+                <div class="mt-4">
+                  <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.urbanxbeauty.com/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+
+              <!-- Project 5 -->
+              <div class="bg-white rounded-lg shadow p-6">
+                <img src="banchmarker.jpg" alt="Project 1" class="rounded mb-4">
+                <h3 class="text-xl font-semibold">Benchmarker</h3>
+                <p class="text-gray-600">Business Website</p>
+                <div class="mt-4">
+                  <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.benchmarker.com/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+
+              <!-- Project 6 -->
+              <div class="bg-white rounded-lg shadow p-6">
+                <img src="bdimbd.jpg" alt="Project 1" class="rounded mb-4">
+                <h3 class="text-xl font-semibold">BDIMBD</h3>
+                <p class="text-gray-600">Private Madrasah Website</p>
+                <div class="mt-4">
+                  <a href="https://www.linkedin.com/in/nazmulha/" class="text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="https://www.bdimbd.com/" class="text-blue-500" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section> 
+
+    <!-- Contact Section -->  
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
+            <div class="max-w-xl mx-auto">
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="form-input w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="form-input w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="form-textarea w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md shadow hover:bg-blue-600 transition">
+                        Send
+                    </button>
+                </form>
+    
+                <!-- Contact Details -->
+                <div class="mt-8 text-center space-y-4">
+                    <p class="text-lg">Email: <a href="mailto:nazmulha30@gmail.com"
+                            class="text-blue-500 hover:underline">nazmulha30@gmail.com</a></p>
+                    <p class="text-lg">Phone: <a href="tel:+8801630628108"
+                            class="text-blue-500 hover:underline">+880 1630628108</a></p>
+    
+                    <!-- Social Media Links -->
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="https://www.linkedin.com/in/nazmulha/" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-600 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-12 19h-3v-9h3v9zm-1.5-10.5c-.966 0-1.5-.724-1.5-1.5 0-.828.554-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .776-.534 1.5-1.5 1.5zm13.5 10.5h-3v-4.5c0-2.676-4-2.483-4 0v4.5h-3v-9h3v1.5c1.396-2.586 7-2.777 7 2.474v5.026z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/CloudStudioBD" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-600 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.617 0-12 5.383-12 12 0 5.301 3.438 9.8 8.207 11.387.6.113.793-.263.793-.583 0-.288-.011-1.05-.016-2.063-3.338.726-4.042-1.608-4.042-1.608-.546-1.387-1.333-1.756-1.333-1.756-1.091-.745.083-.729.083-.729 1.205.085 1.838 1.239 1.838 1.239 1.07 1.835 2.809 1.304 3.492.997.108-.774.419-1.305.762-1.605-2.665-.303-5.467-1.335-5.467-5.933 0-1.312.469-2.386 1.236-3.23-.124-.303-.535-1.526.118-3.176 0 0 1.007-.323 3.3 1.233.957-.266 1.984-.398 3.006-.403 1.022.005 2.05.137 3.008.403 2.29-1.556 3.297-1.233 3.297-1.233.653 1.65.242 2.873.118 3.176.77.844 1.235 1.918 1.235 3.23 0 4.609-2.806 5.626-5.479 5.921.43.371.814 1.103.814 2.222 0 1.606-.015 2.898-.015 3.291 0 .323.191.7.799.58 4.765-1.589 8.196-6.088 8.196-11.387 0-6.617-5.383-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.behance.net/nazmulha" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-600 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9.2 10.4h2.3c1.4 0 2.3-.7 2.3-2 0-1.3-.9-2-2.3-2H9.2v4zm0 1.6v4h2.5c1.6 0 2.5-.7 2.5-2.1 0-1.3-.9-1.9-2.5-1.9H9.2zm9.1-.1c-1.4 0-2.1.9-2.1 2.1s.7 2.1 2.1 2.1 2.1-.9 2.1-2.1-.7-2.1-2.1-2.1zm-7.3-12C4.5-.1-.1 4.4 0 10.5c.1 6 4.8 10.5 10.6 10.4 6 0 10.6-4.7 10.4-10.6C21 4.4 16.6-.1 10.9-.1zm0 18.6c-4.4.1-7.9-3.5-8-7.9-.1-4.4 3.4-8.1 7.9-8.2s8.1 3.4 8.2 7.9c.1 4.5-3.4 8.2-8.1 8.2zM18 7.2c-.9 0-1.7.7-1.7 1.5 0 .9.7 1.5 1.7 1.5s1.7-.7 1.7-1.5-.7-1.5-1.7-1.5zM9.5 15.8H6.2v-9h3.3c2.5 0 4.1 1.5 4.1 3.6 0 2.2-1.5 3.4-3.7 3.4H7.3v2h2.2v-.1zm9.3-.1c-1.3 0-2.4-1-2.4-2.4s1-2.4 2.4-2.4c1.3 0 2.4 1 2.4 2.4s-1.1 2.4-2.4 2.4z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+        <p>©2024 NazmulHA. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://www.linkedin.com/in/nazmulha/" class="hover:text-blue-400" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/CloudStudioBD" class="hover:text-blue-400" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#hero" class="hover:text-blue-400">Home</a>
+        </div>
+        </div>
+    </footer>
+
+  
+    <!-- Scripts for Mobile Button to Vew Menus -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+</html>
